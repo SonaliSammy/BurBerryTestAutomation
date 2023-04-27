@@ -1,0 +1,157 @@
+2023-04-27 02:54:46,975 TestNG-tests-1 io.netty.util.internal.logging.InternalLoggerFactory: useLog4JLoggerFactory Using Log4J as the default logging framework
+2023-04-27 02:54:46,980 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.level: simple
+2023-04-27 02:54:46,980 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.targetRecords: 4
+2023-04-27 02:54:46,984 TestNG-tests-1 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5e9d02b
+2023-04-27 02:54:46,998 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: explicitNoUnsafeCause0 -Dio.netty.noUnsafe: false
+2023-04-27 02:54:46,998 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: javaVersion0 Java version: 11
+2023-04-27 02:54:46,999 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.theUnsafe: available
+2023-04-27 02:54:46,999 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.copyMemory: available
+2023-04-27 02:54:47,000 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.storeFence: available
+2023-04-27 02:54:47,000 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Buffer.address: available
+2023-04-27 02:54:47,000 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-04-27 02:54:47,001 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Bits.unaligned: available, true
+2023-04-27 02:54:47,001 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @21f28d3c
+2023-04-27 02:54:47,002 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-27 02:54:47,002 TestNG-tests-1 io.netty.util.internal.PlatformDependent: unsafeUnavailabilityCause0 sun.misc.Unsafe: available
+2023-04-27 02:54:47,008 TestNG-tests-1 io.netty.util.internal.PlatformDependent: estimateMaxDirectMemory maxDirectMemory: 4238344192 bytes (maybe)
+2023-04-27 02:54:47,010 TestNG-tests-1 io.netty.util.internal.PlatformDependent: tmpdir0 -Dio.netty.tmpdir: C:\Users\sonal\AppData\Local\Temp (java.io.tmpdir)
+2023-04-27 02:54:47,010 TestNG-tests-1 io.netty.util.internal.PlatformDependent: bitMode0 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-04-27 02:54:47,010 TestNG-tests-1 io.netty.util.internal.PlatformDependent: isWindows0 Platform: Windows
+2023-04-27 02:54:47,011 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.maxDirectMemory: -1 bytes
+2023-04-27 02:54:47,011 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-04-27 02:54:47,012 TestNG-tests-1 io.netty.util.internal.CleanerJava9: <clinit> java.nio.ByteBuffer.cleaner(): available
+2023-04-27 02:54:47,012 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.noPreferDirect: false
+2023-04-27 02:54:47,017 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> org.jctools-core.MpscChunkedArrayQueue: available
+2023-04-27 02:54:47,033 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-04-27 02:54:47,033 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-04-27 02:54:47,101 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-04-27 02:54:47,101 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-04-27 02:54:47,109 TestNG-tests-1 io.netty.util.concurrent.GlobalEventExecutor: <clinit> -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-04-27 02:54:47,118 TestNG-tests-1 io.netty.channel.MultithreadEventLoopGroup: <clinit> -Dio.netty.eventLoopThreads: 16
+2023-04-27 02:54:47,123 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.noKeySetOptimization: false
+2023-04-27 02:54:47,123 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numHeapArenas: 16
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numDirectArenas: 16
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.pageSize: 8192
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxOrder: 9
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.chunkSize: 4194304
+2023-04-27 02:54:47,147 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.smallCacheSize: 256
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.normalCacheSize: 64
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.useCacheForAllThreads: false
+2023-04-27 02:54:47,148 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-04-27 02:54:47,153 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.allocator.type: pooled
+2023-04-27 02:54:47,155 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.threadLocalDirectBufferSize: 0
+2023-04-27 02:54:47,155 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-04-27 02:54:47,849 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.processId: 36952 (auto-detected)
+2023-04-27 02:54:47,851 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv4Stack: false
+2023-04-27 02:54:47,851 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv6Addresses: false
+2023-04-27 02:54:47,909 Forwarding newSession on session null to remote io.netty.util.NetUtilInitializations: determineLoopback Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-04-27 02:54:47,911 Forwarding newSession on session null to remote io.netty.util.NetUtil: run Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-04-27 02:54:47,916 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.machineId: 8c:b8:7e:ff:fe:f3:ca:46 (auto-detected)
+2023-04-27 02:54:47,952 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkAccessible: true
+2023-04-27 02:54:47,954 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkBounds: true
+2023-04-27 02:54:47,954 AsyncHttpClient-1-2 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b863d1f
+2023-04-27 02:54:47,980 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-04-27 02:54:47,980 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.ratio: 8
+2023-04-27 02:54:47,980 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.chunkSize: 32
+2023-04-27 02:54:47,980 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.blocking: false
+2023-04-27 02:54:47,980 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-04-27 02:54:49,968 AsyncHttpClient-1-2 io.netty.handler.codec.compression.Brotli: <clinit> brotli4j not in the classpath; Brotli support will be unavailable.
+2023-04-27 02:54:50,212 TestNG-tests-1 io.netty.util.internal.ThreadLocalRandom: newSeed -Dio.netty.initialSeedUniquifier: 0x50ba07afbd5aadaf
+2023-04-27 02:54:53,725 TestNG-tests-1 pageSteps.landingPageSteps: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 02:54:53,764 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 02:54:53,765 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:54:58,006 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:55:01,544 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //button[@title='Menu']
+2023-04-27 02:55:01,587 TestNG-tests-1 pageSteps.landingPageSteps: getDriver obtaining the smartdriver for current thread
+2023-04-27 02:55:01,593 TestNG-tests-1 pageSteps.landingPageSteps: getDriver obtaining the smartdriver for current thread
+2023-04-27 02:55:02,004 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:55:02,473 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:55:02,688 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:55:03,362 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 02:55:03,383 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //a[contains(@href,'women')]/span[text()='All Clothing']
+2023-04-27 02:55:07,294 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //div//span[text()='Category']
+2023-04-27 02:55:08,178 TestNG-tests-1 pages.landingPage: getDriver obtaining the smartdriver for current thread
+2023-04-27 02:55:08,179 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 02:55:08,301 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //div[text()='Jeans']/following-sibling::div
+2023-04-27 02:55:08,360 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //div[text()='Jeans']/following-sibling::div
+2023-04-27 02:55:08,386 TestNG-tests-1 pages.landingPage: getDriver obtaining the smartdriver for current thread
+2023-04-27 02:55:08,388 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 02:55:08,440 TestNG-tests-1 pages.landingPage: getDriver obtaining the smartdriver for current thread
+2023-04-27 02:55:08,441 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 02:55:09,497 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //a[contains(@aria-label,'Jeans')]
+2023-04-27 02:55:19,729 TestNG-tests-1 uiAutomationHelper.element: <init> element not located:By.xpath: //input[@value='22']/parent::label
+2023-04-27 02:55:19,730 TestNG-tests-1 uiAutomationHelper.element: <init> Expected condition failed: waiting for presence of element located by: By.xpath: //input[@value='22']/parent::label (tried for 10 second(s) with 500 milliseconds interval)
+2023-04-27 02:55:19,741 TestNG-tests-1 uiAutomationHelper.element: scroll scrolling to element failed
+org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9aec505d737a98383391e819dd73940c, executeScript {script=arguments[0].scrollIntoView(true);, args=[null]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\sonal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55897/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9aec505d737a98383391e819dd73940c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+	at uiAutomationHelper.element.scroll(element.java:691)
+	at uiAutomationHelper.pageObject.findElement(pageObject.java:243)
+	at pageSteps.landingPageSteps.selectMenu(landingPageSteps.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-04-27 02:55:19,747 TestNG-tests-1 uiAutomationHelper.element: refind Attempting to refind the element: By.xpath: //input[@value='22']/parent::label
+2023-04-27 02:55:19,751 TestNG-tests-1 uiAutomationHelper.element: refind retry number 0
+2023-04-27 02:55:30,664 TestNG-tests-1 uiAutomationHelper.element: refind retry number 1

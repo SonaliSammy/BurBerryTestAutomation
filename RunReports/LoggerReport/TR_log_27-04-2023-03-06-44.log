@@ -1,0 +1,16 @@
+2023-04-27 03:06:45,529 TestNG-tests-1 io.netty.util.internal.logging.InternalLoggerFactory: useLog4JLoggerFactory Using Log4J as the default logging framework
+2023-04-27 03:06:45,533 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.level: simple
+2023-04-27 03:06:45,533 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.targetRecords: 4
+2023-04-27 03:06:45,538 TestNG-tests-1 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@72ab97b5
+2023-04-27 03:06:45,550 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: explicitNoUnsafeCause0 -Dio.netty.noUnsafe: false
+2023-04-27 03:06:45,550 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: javaVersion0 Java version: 11
+2023-04-27 03:06:45,551 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.theUnsafe: available
+2023-04-27 03:06:45,552 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.copyMemory: available
+2023-04-27 03:06:45,552 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.storeFence: available
+2023-04-27 03:06:45,556 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Buffer.address: available
+2023-04-27 03:06:45,557 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-04-27 03:06:45,557 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Bits.unaligned: available, true
+2023-04-27 03:06:45,558 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @2bcdf4bc
+2023-04-27 03:06:45,558 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-27 03:06:45,559 TestNG-tests-1 io.netty.util.internal.PlatformDependent: unsafeUnavailabilityCause0 sun.misc.Unsafe: available
+2023-04-27 03:06:45,567 TestNG-tests-1 io.netty.util.internal.PlatformDependent: estimateMaxDirectMemory maxDirectMemory: 4238344192 bytes (maybe)

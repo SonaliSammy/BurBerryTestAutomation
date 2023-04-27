@@ -1,0 +1,78 @@
+2023-04-27 01:36:57,355 TestNG-tests-1 io.netty.util.internal.logging.InternalLoggerFactory: useLog4JLoggerFactory Using Log4J as the default logging framework
+2023-04-27 01:36:57,444 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.level: simple
+2023-04-27 01:36:57,446 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.targetRecords: 4
+2023-04-27 01:36:57,478 TestNG-tests-1 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@483fe5ed
+2023-04-27 01:36:57,864 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: explicitNoUnsafeCause0 -Dio.netty.noUnsafe: false
+2023-04-27 01:36:57,866 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: javaVersion0 Java version: 11
+2023-04-27 01:36:57,885 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.theUnsafe: available
+2023-04-27 01:36:57,894 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.copyMemory: available
+2023-04-27 01:36:57,903 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.storeFence: available
+2023-04-27 01:36:57,914 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Buffer.address: available
+2023-04-27 01:36:57,920 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-04-27 01:36:57,929 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Bits.unaligned: available, true
+2023-04-27 01:36:57,940 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5fd4f8f5
+2023-04-27 01:36:57,951 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-27 01:36:57,953 TestNG-tests-1 io.netty.util.internal.PlatformDependent: unsafeUnavailabilityCause0 sun.misc.Unsafe: available
+2023-04-27 01:36:58,035 TestNG-tests-1 io.netty.util.internal.PlatformDependent: estimateMaxDirectMemory maxDirectMemory: 4238344192 bytes (maybe)
+2023-04-27 01:36:58,054 TestNG-tests-1 io.netty.util.internal.PlatformDependent: tmpdir0 -Dio.netty.tmpdir: C:\Users\sonal\AppData\Local\Temp (java.io.tmpdir)
+2023-04-27 01:36:58,058 TestNG-tests-1 io.netty.util.internal.PlatformDependent: bitMode0 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-04-27 01:36:58,061 TestNG-tests-1 io.netty.util.internal.PlatformDependent: isWindows0 Platform: Windows
+2023-04-27 01:36:58,086 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.maxDirectMemory: -1 bytes
+2023-04-27 01:36:58,090 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-04-27 01:36:58,114 TestNG-tests-1 io.netty.util.internal.CleanerJava9: <clinit> java.nio.ByteBuffer.cleaner(): available
+2023-04-27 01:36:58,116 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.noPreferDirect: false
+2023-04-27 01:36:58,384 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> org.jctools-core.MpscChunkedArrayQueue: available
+2023-04-27 01:36:58,732 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-04-27 01:36:58,734 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-04-27 01:36:59,529 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-04-27 01:36:59,530 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-04-27 01:36:59,730 TestNG-tests-1 io.netty.util.concurrent.GlobalEventExecutor: <clinit> -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-04-27 01:37:00,006 TestNG-tests-1 io.netty.channel.MultithreadEventLoopGroup: <clinit> -Dio.netty.eventLoopThreads: 16
+2023-04-27 01:37:00,200 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.noKeySetOptimization: false
+2023-04-27 01:37:00,202 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-04-27 01:37:00,736 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numHeapArenas: 16
+2023-04-27 01:37:00,737 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numDirectArenas: 16
+2023-04-27 01:37:00,739 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.pageSize: 8192
+2023-04-27 01:37:00,741 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxOrder: 9
+2023-04-27 01:37:00,744 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.chunkSize: 4194304
+2023-04-27 01:37:00,745 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.smallCacheSize: 256
+2023-04-27 01:37:00,746 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.normalCacheSize: 64
+2023-04-27 01:37:00,748 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-04-27 01:37:00,750 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-04-27 01:37:00,752 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-04-27 01:37:00,753 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.useCacheForAllThreads: false
+2023-04-27 01:37:00,755 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-04-27 01:37:00,905 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.allocator.type: pooled
+2023-04-27 01:37:00,907 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.threadLocalDirectBufferSize: 0
+2023-04-27 01:37:00,908 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-04-27 01:37:04,571 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.processId: 39040 (auto-detected)
+2023-04-27 01:37:04,583 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv4Stack: false
+2023-04-27 01:37:04,585 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv6Addresses: false
+2023-04-27 01:37:04,721 Forwarding newSession on session null to remote io.netty.util.NetUtilInitializations: determineLoopback Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-04-27 01:37:04,733 Forwarding newSession on session null to remote io.netty.util.NetUtil: run Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-04-27 01:37:04,750 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.machineId: 8c:b8:7e:ff:fe:f3:ca:46 (auto-detected)
+2023-04-27 01:37:05,294 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkAccessible: true
+2023-04-27 01:37:05,296 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkBounds: true
+2023-04-27 01:37:05,297 AsyncHttpClient-1-2 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4e913398
+2023-04-27 01:37:05,589 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-04-27 01:37:05,591 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.ratio: 8
+2023-04-27 01:37:05,592 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.chunkSize: 32
+2023-04-27 01:37:05,593 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.blocking: false
+2023-04-27 01:37:05,595 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-04-27 01:37:08,562 AsyncHttpClient-1-2 io.netty.handler.codec.compression.Brotli: <clinit> brotli4j not in the classpath; Brotli support will be unavailable.
+2023-04-27 01:37:09,830 TestNG-tests-1 io.netty.util.internal.ThreadLocalRandom: newSeed -Dio.netty.initialSeedUniquifier: 0xbedb86f5d34f699b
+2023-04-27 01:37:14,221 TestNG-tests-1 pageSteps.landingPageSteps: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 01:37:14,482 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-27 01:37:14,491 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 01:37:24,743 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 01:37:26,404 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //button[@title='Menu']
+2023-04-27 01:37:27,314 TestNG-tests-1 pageSteps.landingPageSteps: getDriver obtaining the smartdriver for current thread
+2023-04-27 01:37:27,364 TestNG-tests-1 pageSteps.landingPageSteps: getDriver obtaining the smartdriver for current thread
+2023-04-27 01:37:28,107 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 01:37:30,030 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 01:37:31,390 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-27 01:38:07,757 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //a[contains(@href,'women')]/span[text()='All Clothing']
+2023-04-27 01:38:24,029 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //a[contains(@href,'women')]/span[text()='All Clothing']
+2023-04-27 01:38:25,097 TestNG-tests-1 uiAutomationHelper.element: refind Attempting to refind the element: By.xpath: //a[contains(@href,'women')]/span[text()='All Clothing']
+2023-04-27 01:38:25,120 TestNG-tests-1 uiAutomationHelper.element: refind retry number 0
+2023-04-27 01:39:33,988 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread

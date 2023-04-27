@@ -1,0 +1,186 @@
+2023-04-26 00:43:43,072 TestNG-tests-1 io.netty.util.internal.logging.InternalLoggerFactory: useLog4JLoggerFactory Using Log4J as the default logging framework
+2023-04-26 00:43:43,077 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.level: simple
+2023-04-26 00:43:43,077 TestNG-tests-1 io.netty.util.ResourceLeakDetector: <clinit> -Dio.netty.leakDetection.targetRecords: 4
+2023-04-26 00:43:43,080 TestNG-tests-1 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@59b64ebd
+2023-04-26 00:43:43,095 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: explicitNoUnsafeCause0 -Dio.netty.noUnsafe: false
+2023-04-26 00:43:43,095 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: javaVersion0 Java version: 11
+2023-04-26 00:43:43,096 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.theUnsafe: available
+2023-04-26 00:43:43,097 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.copyMemory: available
+2023-04-26 00:43:43,097 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> sun.misc.Unsafe.storeFence: available
+2023-04-26 00:43:43,098 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Buffer.address: available
+2023-04-26 00:43:43,098 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-04-26 00:43:43,099 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.Bits.unaligned: available, true
+2023-04-26 00:43:43,100 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @21f28d3c
+2023-04-26 00:43:43,100 TestNG-tests-1 io.netty.util.internal.PlatformDependent0: <clinit> java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-26 00:43:43,101 TestNG-tests-1 io.netty.util.internal.PlatformDependent: unsafeUnavailabilityCause0 sun.misc.Unsafe: available
+2023-04-26 00:43:43,109 TestNG-tests-1 io.netty.util.internal.PlatformDependent: estimateMaxDirectMemory maxDirectMemory: 4238344192 bytes (maybe)
+2023-04-26 00:43:43,110 TestNG-tests-1 io.netty.util.internal.PlatformDependent: tmpdir0 -Dio.netty.tmpdir: C:\Users\sonal\AppData\Local\Temp (java.io.tmpdir)
+2023-04-26 00:43:43,110 TestNG-tests-1 io.netty.util.internal.PlatformDependent: bitMode0 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-04-26 00:43:43,110 TestNG-tests-1 io.netty.util.internal.PlatformDependent: isWindows0 Platform: Windows
+2023-04-26 00:43:43,111 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.maxDirectMemory: -1 bytes
+2023-04-26 00:43:43,111 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-04-26 00:43:43,112 TestNG-tests-1 io.netty.util.internal.CleanerJava9: <clinit> java.nio.ByteBuffer.cleaner(): available
+2023-04-26 00:43:43,112 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> -Dio.netty.noPreferDirect: false
+2023-04-26 00:43:43,123 TestNG-tests-1 io.netty.util.internal.PlatformDependent: <clinit> org.jctools-core.MpscChunkedArrayQueue: available
+2023-04-26 00:43:43,133 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-04-26 00:43:43,134 TestNG-tests-1 io.netty.util.internal.InternalThreadLocalMap: <clinit> -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-04-26 00:43:43,205 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-04-26 00:43:43,205 TestNG-tests-1 io.netty.handler.ssl.JdkSslContext: <clinit> Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-04-26 00:43:43,213 TestNG-tests-1 io.netty.util.concurrent.GlobalEventExecutor: <clinit> -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-04-26 00:43:43,222 TestNG-tests-1 io.netty.channel.MultithreadEventLoopGroup: <clinit> -Dio.netty.eventLoopThreads: 16
+2023-04-26 00:43:43,227 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.noKeySetOptimization: false
+2023-04-26 00:43:43,227 TestNG-tests-1 io.netty.channel.nio.NioEventLoop: <clinit> -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-04-26 00:43:43,251 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numHeapArenas: 16
+2023-04-26 00:43:43,251 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.numDirectArenas: 16
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.pageSize: 8192
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxOrder: 9
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.chunkSize: 4194304
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.smallCacheSize: 256
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.normalCacheSize: 64
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.useCacheForAllThreads: false
+2023-04-26 00:43:43,252 TestNG-tests-1 io.netty.buffer.PooledByteBufAllocator: <clinit> -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-04-26 00:43:43,259 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.allocator.type: pooled
+2023-04-26 00:43:43,260 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.threadLocalDirectBufferSize: 0
+2023-04-26 00:43:43,260 TestNG-tests-1 io.netty.buffer.ByteBufUtil: <clinit> -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-04-26 00:43:43,927 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.processId: 20664 (auto-detected)
+2023-04-26 00:43:43,929 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv4Stack: false
+2023-04-26 00:43:43,929 Forwarding newSession on session null to remote io.netty.util.NetUtil: <clinit> -Djava.net.preferIPv6Addresses: false
+2023-04-26 00:43:43,986 Forwarding newSession on session null to remote io.netty.util.NetUtilInitializations: determineLoopback Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-04-26 00:43:43,987 Forwarding newSession on session null to remote io.netty.util.NetUtil: run Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-04-26 00:43:43,991 Forwarding newSession on session null to remote io.netty.channel.DefaultChannelId: <clinit> -Dio.netty.machineId: 8c:b8:7e:ff:fe:f3:ca:46 (auto-detected)
+2023-04-26 00:43:44,024 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkAccessible: true
+2023-04-26 00:43:44,025 AsyncHttpClient-1-2 io.netty.buffer.AbstractByteBuf: <clinit> -Dio.netty.buffer.checkBounds: true
+2023-04-26 00:43:44,025 AsyncHttpClient-1-2 io.netty.util.ResourceLeakDetectorFactory: newResourceLeakDetector Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@55b01226
+2023-04-26 00:43:44,048 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-04-26 00:43:44,048 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.ratio: 8
+2023-04-26 00:43:44,048 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.chunkSize: 32
+2023-04-26 00:43:44,049 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.blocking: false
+2023-04-26 00:43:44,049 AsyncHttpClient-1-2 io.netty.util.Recycler: <clinit> -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-04-26 00:43:44,659 AsyncHttpClient-1-2 io.netty.handler.codec.compression.Brotli: <clinit> brotli4j not in the classpath; Brotli support will be unavailable.
+2023-04-26 00:43:44,724 TestNG-tests-1 io.netty.util.internal.ThreadLocalRandom: newSeed -Dio.netty.initialSeedUniquifier: 0xe511b4b2321586b1
+2023-04-26 00:43:46,062 TestNG-tests-1 pageSteps.landingPageSteps: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-26 00:43:46,069 TestNG-tests-1 pages.landingPage: getWaitDuration selenium getDriver() getWait() time set from environment properties: PT15S
+2023-04-26 00:43:46,069 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-26 00:43:46,523 TestNG-tests-1 pageSteps.landingPageSteps: getWait obtaining the wait for current thread
+2023-04-26 00:43:52,751 TestNG-tests-1 uiAutomationHelper.element: <init> element located successfully:By.xpath: //li/a[text()='Women']
+2023-04-26 00:43:54,015 TestNG-tests-1 uiAutomationHelper.element: refind Attempting to refind the element: By.xpath: //li/a[text()='Women']
+2023-04-26 00:43:54,029 TestNG-tests-1 uiAutomationHelper.element: refind retry number 0
+2023-04-26 00:43:56,364 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/v3-html-index.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,369 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-index_en.ftl"): Not found
+2023-04-26 00:43:56,374 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-index.ftl"): Found
+2023-04-26 00:43:56,375 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/v3-html-index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-index.ftl"
+2023-04-26 00:43:56,783 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/v3-html-head.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,786 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-head_en.ftl"): Not found
+2023-04-26 00:43:56,787 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-head.ftl"): Found
+2023-04-26 00:43:56,788 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/v3-html-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-head.ftl"
+2023-04-26 00:43:56,794 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,796 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-nav_en.ftl"): Not found
+2023-04-26 00:43:56,798 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/v3-html-nav.ftl"): Found
+2023-04-26 00:43:56,798 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-nav.ftl"
+2023-04-26 00:43:56,817 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,818 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view_en.ftl"): Not found
+2023-04-26 00:43:56,819 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view.ftl"): Found
+2023-04-26 00:43:56,820 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view.ftl"
+2023-04-26 00:43:56,862 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,864 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts_en.ftl"): Not found
+2023-04-26 00:43:56,865 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts.ftl"): Found
+2023-04-26 00:43:56,866 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view-charts.ftl"
+2023-04-26 00:43:56,893 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/test-view/v3-html-bdd.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,895 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-bdd_en.ftl"): Not found
+2023-04-26 00:43:56,896 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/test-view/v3-html-bdd.ftl"): Found
+2023-04-26 00:43:56,898 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/test-view/v3-html-bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-bdd.ftl"
+2023-04-26 00:43:56,971 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,972 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view_en.ftl"): Not found
+2023-04-26 00:43:56,975 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view.ftl"): Found
+2023-04-26 00:43:56,976 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/category-view/v3-html-category-view.ftl"
+2023-04-26 00:43:56,987 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:56,989 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view_en.ftl"): Not found
+2023-04-26 00:43:56,992 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view.ftl"): Found
+2023-04-26 00:43:56,992 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/exception-view/v3-html-exception-view.ftl"
+2023-04-26 00:43:57,010 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,013 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view_en.ftl"): Not found
+2023-04-26 00:43:57,014 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view.ftl"): Found
+2023-04-26 00:43:57,015 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/author-view/v3-html-author-view.ftl"
+2023-04-26 00:43:57,024 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,026 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view_en.ftl"): Not found
+2023-04-26 00:43:57,027 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view.ftl"): Found
+2023-04-26 00:43:57,028 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/dashboard-view/v3-html-dashboard-view.ftl"
+2023-04-26 00:43:57,042 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,043 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
+2023-04-26 00:43:57,045 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
+2023-04-26 00:43:57,046 TestNG-tests-1 freemarker.cache: debug Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"
+2023-04-26 00:43:57,130 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/logger-test.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,133 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-test_en.ftl"): Not found
+2023-04-26 00:43:57,134 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-test.ftl"): Found
+2023-04-26 00:43:57,135 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/logger-test.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/logger-test.ftl"
+2023-04-26 00:43:57,166 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-variables.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,168 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2023-04-26 00:43:57,169 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2023-04-26 00:43:57,169 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-variables.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
+2023-04-26 00:43:57,187 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-head.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,189 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head_en.ftl"): Not found
+2023-04-26 00:43:57,190 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head.ftl"): Found
+2023-04-26 00:43:57,190 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-head.ftl"
+2023-04-26 00:43:57,193 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,199 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav_en.ftl"): Not found
+2023-04-26 00:43:57,201 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav.ftl"): Found
+2023-04-26 00:43:57,201 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-nav.ftl"
+2023-04-26 00:43:57,227 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/logger-dashboard.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,232 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-dashboard_en.ftl"): Not found
+2023-04-26 00:43:57,234 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-dashboard.ftl"): Found
+2023-04-26 00:43:57,235 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/logger-dashboard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/logger-dashboard.ftl"
+2023-04-26 00:43:57,239 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-variables.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,240 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2023-04-26 00:43:57,241 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2023-04-26 00:43:57,241 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-variables.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
+2023-04-26 00:43:57,249 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-head.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,250 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head_en.ftl"): Not found
+2023-04-26 00:43:57,251 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head.ftl"): Found
+2023-04-26 00:43:57,252 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-head.ftl"
+2023-04-26 00:43:57,256 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,258 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav_en.ftl"): Not found
+2023-04-26 00:43:57,259 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav.ftl"): Found
+2023-04-26 00:43:57,259 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-nav.ftl"
+2023-04-26 00:43:57,266 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-nav-right-items.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,268 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav-right-items_en.ftl"): Not found
+2023-04-26 00:43:57,269 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav-right-items.ftl"): Found
+2023-04-26 00:43:57,269 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-nav-right-items.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-nav-right-items.ftl"
+2023-04-26 00:43:57,274 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-dashboard.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,275 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-dashboard_en.ftl"): Not found
+2023-04-26 00:43:57,276 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-dashboard.ftl"): Found
+2023-04-26 00:43:57,276 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-dashboard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-dashboard.ftl"
+2023-04-26 00:43:57,297 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-dashboard-scripts.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,299 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-dashboard-scripts_en.ftl"): Not found
+2023-04-26 00:43:57,300 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-dashboard-scripts.ftl"): Found
+2023-04-26 00:43:57,301 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-dashboard-scripts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-dashboard-scripts.ftl"
+2023-04-26 00:43:57,319 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/logger-tag.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,320 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-tag_en.ftl"): Not found
+2023-04-26 00:43:57,320 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/logger-tag.ftl"): Found
+2023-04-26 00:43:57,321 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/logger-tag.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/logger-tag.ftl"
+2023-04-26 00:43:57,324 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-variables.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,326 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2023-04-26 00:43:57,331 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2023-04-26 00:43:57,332 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-variables.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
+2023-04-26 00:43:57,339 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-head.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,341 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head_en.ftl"): Not found
+2023-04-26 00:43:57,342 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-head.ftl"): Found
+2023-04-26 00:43:57,342 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-head.ftl"
+2023-04-26 00:43:57,347 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,349 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav_en.ftl"): Not found
+2023-04-26 00:43:57,350 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav.ftl"): Found
+2023-04-26 00:43:57,350 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-nav.ftl"
+2023-04-26 00:43:57,354 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-tag.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,355 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-tag_en.ftl"): Not found
+2023-04-26 00:43:57,357 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-tag.ftl"): Found
+2023-04-26 00:43:57,357 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-tag.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-tag.ftl"
+2023-04-26 00:43:57,363 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "commons/commons-macros.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,365 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2023-04-26 00:43:57,366 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2023-04-26 00:43:57,366 TestNG-tests-1 freemarker.cache: debug Loading template for "commons/commons-macros.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/commons/commons-macros.ftl"
+2023-04-26 00:43:57,373 TestNG-tests-1 freemarker.cache: debug Couldn't find template in cache for "logger/partials/logger-nav-right-items.ftl"("en", UTF-8, parsed); will try to load it.
+2023-04-26 00:43:57,374 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav-right-items_en.ftl"): Not found
+2023-04-26 00:43:57,376 TestNG-tests-1 freemarker.cache: debug TemplateLoader.findTemplateSource("logger/partials/logger-nav-right-items.ftl"): Found
+2023-04-26 00:43:57,376 TestNG-tests-1 freemarker.cache: debug Loading template for "logger/partials/logger-nav-right-items.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/sonal/.gradle/caches/modules-2/files-2.1/com.aventstack/extentreports/4.0.9/272a055be574edaa8e609476077f56d3aa65b58a/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/logger/partials/logger-nav-right-items.ftl"

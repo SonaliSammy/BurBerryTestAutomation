@@ -1,0 +1,168 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url 'https://sammyautomate.jfrog.io/artifactory/my-gradle-dev'
+            credentials {
+                username = "sonalisammy85@gmail.com"
+                password = 'AKCp8mYoSYQjxyLtvuiPMmraZjDKyRqSLLeiKYEk4DhL1DdXzh1tZsyENFdcosR7a9ZrsuqXL'
+            }
+        }
+
+    }
+    dependencies {
+        //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
+    }
+}
+
+allprojects {
+    apply plugin: "com.jfrog.artifactory"
+}
+
+group = 'com.sammy.uk'
+def ver = System.getProperty("jar.version")
+version = "$ver"
+
+apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+apply plugin: 'java'
+apply plugin: 'com.jfrog.artifactory'
+
+
+
+def artifactory_password = 'AKCp8mYoSYQjxyLtvuiPMmraZjDKyRqSLLeiKYEk4DhL1DdXzh1tZsyENFdcosR7a9ZrsuqXL'
+def artifactory_user = "sonalisammy85@gmail.com"
+def artifactory_contextUrl = "https://sammyautomate.jfrog.io/artifactory/"
+
+configurations.all {
+    // Check for snapshot updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+jar {from sourceSets.test.output}
+
+task testJar(type: Jar) {
+//    classifier = 'tests'
+    from sourceSets.test.output
+
+    from('src/test/java') {
+        include '/**/*.json'
+    }
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from tasks.javadoc.destinationDir
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.test.allSource
+    classifier = 'sources'
+}
+
+
+artifacts {
+    archives testJar
+    archives javadocJar
+    //archives sourcesJar
+}
+
+
+repositories {
+
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://sammyautomate.jfrog.io/artifactory/my-gradle-dev/"
+        }
+        maven {
+            url "https://sammyautomate.jfrog.io/artifactory/my-gradle-dev-local/"
+        }
+
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.sammy.uk', name: 'UIAutomationManager', version: '0.1.0'
+    implementation group: 'com.sammy.uk', name: 'ReportManager', version: '0.0.4'
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: '6.10.0', changing:true
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.4'
+    implementation group: 'io.cucumber', name: 'cucumber-core', version: '6.10.4'
+    implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '6.10.0'
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1-jre'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.9.0'
+    implementation group: 'com.microsoft.graph', name: 'microsoft-graph', version: '5.31.0'
+    implementation group: 'com.azure', name: 'azure-identity', version: '1.5.3'
+    implementation group: 'com.microsoft.azure', name: 'msal4j', version: '1.13.0'
+    implementation group: 'org.jasypt', name: 'jasypt', version: '1.9.3'
+
+
+}
+
+
+task cucumber(type: Test){
+
+    def suite = 'src/test/resources/testsuite/CLItest.xml'
+    systemProperty "env", System.getProperty("env")
+    systemProperty "cucumber.options", "--tags " + System.properties.getProperty("tags")
+
+    ignoreFailures = true
+
+    useTestNG() {
+        useDefaultListeners = true
+        preserveOrder= true
+        suites suite
+    }
+
+    outputs.upToDateWhen { false }
+}
+
+
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"
+    //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'my-gradle-dev-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            mavenCompatible = true
+
+        }
+        defaults {
+            publications('mavenJava')
+            publishBuildInfo = true
+            publishArtifacts = true
+            publishPom = true
+        }
+
+
+    }
+    resolve {
+        repository {
+            repoKey = 'my-gradle-dev'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+
+        }
+    }
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = "$group"
+            artifactId = "$rootProject.name"
+            version = "${ver}"
+            from components.java
+            artifact jar
+            artifact javadocJar
+            artifact sourcesJar
+        }
+    }
+}

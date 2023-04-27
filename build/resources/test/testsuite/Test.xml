@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="tests" thread-count="10" data-provider-thread-count="10">
+
+    <test name="QATest">
+        <classes>
+            <class name="Runner.TestRunner"/>
+        </classes>
+    </test>
+    <!--<test name="test2">-->
+    <!--<classes>-->
+    <!--<class name="class.Test2"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>
