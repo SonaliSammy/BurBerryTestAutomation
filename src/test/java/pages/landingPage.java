@@ -49,31 +49,6 @@ public class landingPage extends basePO {
     public static element subMenu(String menuName,String subMenuName){
         return findElement(By.xpath("//a[contains(@href,'"+menuName.toLowerCase()+"')]/span[text()='"+subMenuName+"']"));
     }
-     public element item(String itemName){
-        element item = null;
-        if(findElements(By.xpath("//div[text()='"+itemName+"']")).size()>1){
-            item=findElements(By.xpath("(//div[text()='"+itemName+"'])")).get(0);
-        }else{
-            item=findElement(By.xpath("(//div[text()='"+itemName+"'])"));
-        }
-        return item;
-     }
-
-    public int itemSize(String itemName){
-        int itemSize ;
-        if(findElements(By.xpath("//div[text()='"+itemName+"]'/following-sibling::div")).size()>1){
-            itemSize=Integer.parseInt(findElements(By.xpath("(//div[text()='"+itemName+"'])")).get(0).getText().substring(1,findElement(By.xpath("//div[text()='"+itemName+"']/following-sibling::div")).getText().length()-1));
-        }else{
-            itemSize=Integer.parseInt(findElement(By.xpath("//div[text()='"+itemName+"']/following-sibling::div")).getText().trim().substring(1,findElement(By.xpath("//div[text()='"+itemName+"']/following-sibling::div")).getText().trim().length()-1));
-        }
-        return itemSize;
-    }
-
-    public element productCardLink(String itemName){
-        return findElement(By.xpath("//a[contains(@aria-label,'"+itemName+"')]"));
-    }
-
-
 
 
 

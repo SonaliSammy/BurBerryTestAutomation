@@ -11,18 +11,16 @@ Feature: Order Placement
     Given User navigates to menuList
     And User select <menuName> menu
     And User select <subMenu> menu
-    And User choses <subMenu>
+    And User choses <sub-subMenu>
     And User click on Category
-    And User select <subMenu> menu
-    And User select <sub-subMenu> menu
-    And User select <categoryType> menu
-    And User get itemQuantity
-    And User select <item> menu
-    And User select <productCard> menu
-    And User checks Size availability
-    And User select <size> menu
+    And User get itemQuantity for the <item>
+    And User selected <item> only if it is available
+    And User views <productCard> link
+    And User checks <size> availability
+    And User picks a <size> list
     And User added it to bag
-    And User naviagates to bag
+    And User checks the bag
+    And User checkout the item
 
 
 
@@ -30,5 +28,5 @@ Feature: Order Placement
 
 
     Examples:
-      | menuName|subMenu| sub-subMenu|categoryType|item|productCard|size|
-      |Women    |Clothing|All Clothing|Category|Jeans  |Jeans      |30|
+      | menuName|subMenu| sub-subMenu|item|productCard|size|
+      |Women    |Clothing|All Clothing|Jeans|Jeans      |30|

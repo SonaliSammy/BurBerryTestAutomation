@@ -1,1 +1,0 @@
-2023-04-27 01:13:05,744 TestNG-tests-1 driverController.chromeDriverManager: getCustomDimension Screen resolution is not provided in proper format it should be in the format "width,height"
