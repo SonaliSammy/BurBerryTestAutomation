@@ -12,12 +12,13 @@ import uiAutomationHelper.basePO;
 
 import java.time.Duration;
 
-import static pages.landingPage.menu;
+import static pages.landingPage.*;
 
 
 public class landingPageSteps extends basePO {
 
     final static Logger logger = Logger.getLogger(landingPageSteps.class) ;
+    landingPage lP= new landingPage();
 
     @Given("User accepts cookies")
     public void acceptCookies(){
@@ -27,7 +28,7 @@ public class landingPageSteps extends basePO {
 
     @Given("^User select (.*) menu$")
     public void selectMenu(String menuName){
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='"+menuName+"']"))).click();
+        getWait().until(ExpectedConditions.visibilityOf(landingPage.menu(menuName).element())).click();
     }
 
 
@@ -43,9 +44,9 @@ public class landingPageSteps extends basePO {
     }
 
     @And("^User choses (.*)$")
-    public void userChosesSubMenu(String subMenu) {
+    public void userChosesSubMenu(String subMenuName) {
         getWait().withTimeout(Duration.ofMillis(5000));
-        findElement(By.xpath("//a[contains(@href,'women')]/span[text()='"+subMenu+"']")).clickJS();
+        landingPage.submenuList(subMenuName).clickJS();
     }
 
     @And("User click on Category")
@@ -59,11 +60,8 @@ public class landingPageSteps extends basePO {
         int itemQty = 0;
         String itemQtytext;
         getWait().withTimeout(Duration.ofMillis(3000));
-        if(findElements(By.xpath("//div[text()='"+item+"]'/following-sibling::div")).size()>1){
-            itemQtytext=findElements(By.xpath("//div[text()='"+item+"']/following-sibling::div")).get(0).getText().trim();
-        }else{
-            itemQtytext=findElement(By.xpath("//div[text()='"+item+"']/following-sibling::div")).getText().trim();
-        }
+
+        itemQtytext= lP.itemQuantity(item).getText().trim();
         logger.debug("itemQTy= "+itemQtytext);
         if(itemQtytext.length()>0){
             itemQty=Integer.parseInt(itemQtytext.substring(1,itemQtytext.length()-1));
@@ -75,49 +73,60 @@ public class landingPageSteps extends basePO {
     public void userSelectedItemOnlyIfItIsAvailable(String item) {
         int itemQty=  Integer.parseInt(runTimeThreadVariable.getInstance().getvalue("itemQty").toString());
         if(itemQty>0){
-            if(findElements(By.xpath("//div[text()='"+item+"']")).size()>1){
-                findElements(By.xpath("(//div[text()='"+item+"'])")).get(0).clickJS();
-            }else{
-                findElement(By.xpath("(//div[text()='"+item+"'])")).clickJS();
-            }
+            lP.item(item).clickJS();
         }
         getWait().withTimeout(Duration.ofMillis(1000));
     }
 
     @And("^User views (.*) link$")
     public void userViewsProductCardLink(String itemSubType) {
-        findElement(By.xpath("//a[contains(@aria-label,'"+itemSubType+"')]")).clickJS();
+       landingPage.productCard(itemSubType).clickJS();
     }
 
     @And("^User checks (.*) availability$")
     public void userChecksSizeAvailability(String size) {
         getDriver().manage().window().maximize();
-        boolean sizeUnvailable=findElement(By.xpath("//input[@value='"+size+"']/parent::label")).getAttribute("class").contains("muted");
+        boolean sizeUnvailable=sizeAvailability(size).getAttribute("class").contains("muted");
         logger.debug("sizeAvailable="+sizeUnvailable);
         runTimeThreadVariable.getInstance().setvalue("sizeAvailable",sizeUnvailable);
     }
 
     @And("^User picks a (.*) list$")
-    public void userPicksASizeList(String size) throws InterruptedException {
+    public void userPicksASizeList(String sizeName) throws InterruptedException {
         boolean sizeUnavailable= (boolean) runTimeThreadVariable.getInstance().getvalue("sizeAvailable");
         if(!sizeUnavailable){
-            findElement(By.xpath("//input[@value='"+size+"']")).clickJS();
+            size(sizeName).clickJS();
             Thread.sleep(2000);
         }
     }
 
     @And("User added it to bag")
     public void userAddedItToBag() {
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Add to bag']//ancestor::button"))).click();
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(landingPage.addToBag))).click();
     }
 
     @And("User checks the bag")
-    public void userChecksTheBag() {
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='Bag']"))).click();
+    public void userChecksTheBag() throws InterruptedException {
+        Thread.sleep(2000);
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(landingPage.bag))).click();
+        Thread.sleep(2000);
     }
 
     @And("User checkout the item")
-    public void userCheckoutTheItem() {
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@data-test='shopping-bag__checkout-button']"))).click();
+    public void userCheckoutTheItem() throws InterruptedException {
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(landingPage.checkOut))).click();
+        Thread.sleep(1000);
+    }
+
+    @And("^User decides to select unavailable (.*) list$")
+    public void userDecidesToSelectUnavailableSizeList(String sizeName) throws InterruptedException {
+        size(sizeName).clickJS();
+        Thread.sleep(2000);
+    }
+
+    @And("User wanted to get notified for the product")
+    public void userWantedToGetNotifiedForTheProduct() throws InterruptedException {
+        Thread.sleep(2000);
+        findElement(By.xpath(landingPage.Notify)).clickJS();
     }
 }

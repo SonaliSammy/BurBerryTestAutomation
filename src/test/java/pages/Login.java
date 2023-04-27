@@ -1,31 +1,39 @@
-package PO;
+package pages;
 
-import Sammy.Properties.Properties;
-import Sammy.UIAutomationHelper.BasePO;
+
+import org.openqa.selenium.By;
+import uiAutomationHelper.basePO;
 
 import static Utility.Util.decrypytText;
+import static properties.properties.getProperties;
 
-public class Login extends BasePO {
+public class Login extends basePO {
 
-    public String getUserName(String Role){
-        String Env= Properties.getProperties("config/Controller", "env");
-        return Properties.getProperties("config/"+Env, Role+"_Uname");
+    public static String signInRadioButton="//input[@id='sign-in']";
+    public static String yourEmail="//input[@id='loginID']";
+    public static String password="//input[@id='password']";
+    public static String Signin="//button[@data-testid='loginButtonTestId']";
+
+    public String getUserName(){
+        String Env= getProperties("config/Controller", "env");
+        return getProperties("config/"+Env, "Uname");
 
     }
 
-    public String getPassword(String Role){
-        String Env= Properties.getProperties("config/Controller", "env");
-        return Properties.getProperties("config/"+Env, Role+"_PWD");
+    public String getPassword(){
+        String Env= getProperties("config/Controller", "env");
+        return getProperties("config/"+Env, "PWD");
 
     }
 
 
-    public void enterCredential(String Role){
-        String Uname=getUserName(Role);
-        String Password=getPassword(Role);
+    public void enterCredential(){
+        String Uname=getUserName();
+        String Password=getPassword();
         String decryptedPassword=decrypytText(Password);
-        findByAI("Email").sendKeys(Uname);
-        findByAI("HUDLPassword").sendKeys(decryptedPassword);
-        findByAI("HUDLLogin").click();
+        findElement(By.xpath(signInRadioButton)).click();
+    //        findElement(By.xpath(yourEmail)).sendKeys(Uname);
+    //        findElement(By.xpath(Password)).sendKeys(Password);
+    //        findElement(By.xpath(Signin)).click();
     }
 }
